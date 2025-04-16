@@ -1,6 +1,6 @@
 @font-face {
     font-family: "VKSansDisplay";
-    src: url('/fonts/VKSansDisplay-Regular.woff2') format('woff2');
+    src: url('../portfolio/fonts/VKSansDisplay-Regular.woff2') format('woff2');
 }
 /*<!-- Body --!>*/
 body{
@@ -157,4 +157,5 @@ html {
 
 .container-about{
     background-image: url('./img/pullse-img-logo.png');
+    width: 100px;
 }
