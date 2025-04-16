@@ -4,7 +4,7 @@
 }
 /*<!-- Body --!>*/
 body{
-    font-family: "VKSansDisplay";
+    font-family: "VKSansDisplay", sans-serif;
     background-color: #4A4A4A;
     margin: 0;
     padding: 0;
@@ -152,4 +152,9 @@ html {
 .prjct-name {
     font-size: 18px;
     text-align: center;
+}
+
+
+.container-about{
+    background-image: url('./img/pullse-img-logo.png');
 }
