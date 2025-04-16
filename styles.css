@@ -1,6 +1,6 @@
 @font-face {
     font-family: "VKSansDisplay";
-    src: url('/fonts/VKSansDisplay-Regular.ttf') format('truetype');
+    src: url('/fonts/VKSansDisplay-Regular.woff2') format('woff2');
 }
 /*<!-- Body --!>*/
 body{
@@ -54,35 +54,39 @@ header{
     margin: 0px 50px;
 }
 
-h1 {
+.centered-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 98;
-    transform: translate(-50%, -60%); /* Центрує і піднімає трохи вище */
-}
-.more-btn {
+    transform: translate(-50%, -50%);
+    text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center; /* Центруем текст внутри */
-    gap: 16px;
-    font-size: 18px;
-    text-decoration: none; /* Убираем подчёркивание у <a> */
-    position: absolute;
+    z-index: 98;
+}
+
+.centered-content h1 {
+    margin: 0;
+}
+
+.more-btn {
+    margin-top: 40px; /* 40px ниже h1 */
     width: 200px;
     height: 56px;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -70%);
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
     color: #fff;
     background: #2A2A2A;
-    backdrop-filter: blur(30px); /* реальное значение вместо 3.78e+07px */
+    backdrop-filter: blur(30px);
     border-radius: 16px;
     border: none;
     cursor: pointer;
     transition: background 0.3s ease;
-    margin-top: 20px;
     z-index: 97;
 }
 
@@ -133,12 +137,16 @@ html {
     margin: 0 100px; /* Тільки горизонтальні відступи */
     border: 3px solid black;
     box-shadow: 0px 2px 100px rgba(179, 96, 178, 0.25);
+    transition: margin-bottom 0.3s ease;
+}
+
+.prjct-main-img:hover{
+    margin-bottom: 20px;
 }
 
 
 .m-s-lable {
     text-align: center;
-    margin-top: 20px;
 }
 
 .prjct-name {
