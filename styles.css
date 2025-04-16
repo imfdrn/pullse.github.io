@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "VKSansDisplay";
+    src: url('/fonts/VKSansDisplay-Regular.ttf') format('truetype');
+}
+/*<!-- Body --!>*/
+body{
+    font-family: "VKSansDisplay";
+    background-color: #4A4A4A;
+    margin: 0;
+    padding: 0;
+}
+
+/*<!-- Header --!>*/
+header{
+    position: fixed;
+    color: #fff;
+    background-color:   #1d1d1d;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0px 5px 100px rgba(179, 96, 178, 0.525);
+    z-index: 99;
+}
+
+.header-p{
+    top: -2.75em;
+    position: relative;
+    left: 62.5px;
+    z-index: 2;
+    margin-right: 400px;
+}
+
+.pullse-hdr-logo{
+    position: relative;
+    width: 62px;
+    top: 1em;
+    z-index: 1;
+}
+
+.hdr-a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff
+}
+
+/*<!-- H1 --!>*/
+
+.header-a-links{
+    position: relative;
+    top: -2.75em;
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 50px;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 98;
+    transform: translate(-50%, -60%); /* Центрує і піднімає трохи вище */
+}
+.more-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Центруем текст внутри */
+    gap: 16px;
+    font-size: 18px;
+    text-decoration: none; /* Убираем подчёркивание у <a> */
+    position: absolute;
+    width: 200px;
+    height: 56px;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -70%);
+    color: #fff;
+    background: #2A2A2A;
+    backdrop-filter: blur(30px); /* реальное значение вместо 3.78e+07px */
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+    z-index: 97;
+}
+
+.more-btn:hover {
+    background: #1a1a1a;
+}
+
+
+html {
+    scroll-behavior: smooth; /* Плавная прокрутка */
+}
+  
+.slide {
+    position: relative;
+    height: 100vh; /* Каждая секция на весь экран */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: white;
+}
+  
+  #main {background: #1c1c1c;}
+  #about { background: #1d1d1d; }
+  #order { background: #2a2a2a; }
+  #reviews { background: #3a3a3a; }
+  
+.main-section-content{
+    position: absolute;
+    top: 10vh;
+}
+
+.projects-main {
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Вертикальное выравнивание по центру */
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column; /* Элементы идут вертикально */
+    align-items: center; /* Центрируем элементы по горизонтали */
+}
+
+.prjct-main-img {
+    width: 200px;
+    border-radius: 2vb;
+    margin: 0 100px; /* Тільки горизонтальні відступи */
+    border: 3px solid black;
+    box-shadow: 0px 2px 100px rgba(179, 96, 178, 0.25);
+}
+
+
+.m-s-lable {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.prjct-name {
+    font-size: 18px;
+    text-align: center;
+}
