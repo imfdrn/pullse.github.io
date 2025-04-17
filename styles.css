@@ -23,7 +23,22 @@ header{
     z-index: 99;
 }
 
+.cabinet{
+    right: 2%;
+    top: 4.45%;
+    position: fixed;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff  ;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .header-p{
+    text-align: center;
+    justify-content: center;
+    text-align: center;
     top: -2.75em;
     position: relative;
     left: 62.5px;

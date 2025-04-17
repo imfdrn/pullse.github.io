@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="../img/pullse-img-logo.png">
+
+    <link rel="stylesheet" href="../styles/admin.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div id="password-overlay" style="position:fixed; top:0; left:0; width:100%; height:100%; background:#fff; z-index:9999; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+        <h2>Enter Password</h2>
+        <input type="password" id="password-input" placeholder="Password..." style="padding:10px; font-size:16px; margin:10px;">
+        <button onclick="checkPassword()" style="padding:10px 20px; font-size:16px;">Submit</button>
+        <p id="error-msg" style="color:red; display:none; margin-top:10px;">Incorrect password!</p>
+    </div>
+    
+    <header>
+        <a href="../index.html#none" class="hdr-a" id="logo-trigger">
+            <img class="pullse-hdr-logo" src="../img/pullse-img-logo.png" alt="pullse">
+            <p class="header-p">PULLSE</p>
+        </a>
+        <p class="panel-lable"> ADMIN PANEL</p>
+    </header>
+
+    <div class="sidebar-container">
+        <div class="content-container">
+            <h3>Dashboard</h3>
+    
+            <div class="orders-row">
+                <h3>Orders</h3>
+                <p class="orders-value">31</p>
+            </div>
+    
+            <h3>Messeneger</h3>
+        </div>
+    </div>
+    
+    <script src="../assets/admin.js"></script>
+</body>
+</html>
